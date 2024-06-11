@@ -1,10 +1,10 @@
 class Solution {
 public:
-    vector<int> relativeSortArray(vector<int>& arr1, vector<int>& arr2) {
+    vector<int> relativeSortArray(vector<int>& arr, vector<int>& arr2) {
         vector<int> ans;
         
         map<int, int>mp;
-        for(auto x: arr1)
+        for(auto x: arr)
             mp[x]++;
         for(auto temp :  arr2){
             if(mp.find(temp)!=mp.end()){
